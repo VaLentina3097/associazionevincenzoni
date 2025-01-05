@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archivio - Galleria | Associazione Vincenzoni</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+<!-- Linking Box Icons for Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/Galleria_style.css" />
+    <script src="assets/script/Galleria_script.js" defer></script>
+  </head>
+  <body>
+      
+<!-- Header or Navbar -->
+    <header class="site-header" id="site-header">
+      <navbar class="navbar">
+        <!-- Navbar Logo -->
+        <a href="../../Home/index.html" class="logo-link" id="logo-image">
+          <img
+            src="assets/images/logo-black.svg"
+            alt="Associazione Vincenzoni"
+            class="logo-image black"
+          />
+        </a>
+
+        <!-- Navbar Links -->
+        <ul class="menu-links">
+          <li class="menu-item">
+            <a href="../../Associazione/Associazione.html">ASSOCIAZIONE</a>
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="javascript:void(0)">
+              CONCORSO 2024
+              <i class="dropdown-icon bx bx-chevron-down"></i>
+            </a>
+
+            <!-- Navbar Dropdown Links -->
+            <ul class="dropdown-links">
+              <li class="dropdown-item">
+                <a href="../../Concorso 2024/Bando 2024/Concorso2024_Bando2024.html">Bando 2024</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="javascript:void(0)">
+              CINEMA E SCUOLA
+              <i class="dropdown-icon bx bx-chevron-down"></i>
+            </a>
+
+            <!-- Navbar Dropdown Links -->
+            <ul class="dropdown-links">
+              <li class="dropdown-item">
+                <a href="../../Cinema e scuola/Progetto scuola 2023/ProgettoScuola2023.html">Progetto scuola 2023</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="../../Cinema e scuola/Pane&Cinema/PaneECinema.html">Pane&amp;Cinema</a>
+              </li>
+            </ul>
+              
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="javascript:void(0)">
+              ARCHIVIO
+              <i class="dropdown-icon bx bx-chevron-down"></i>
+            </a>
+
+            <!-- Navbar Dropdown Links -->
+            <ul class="dropdown-links">
+              <li class="dropdown-item">
+                <a href="../Edizioni precedenti/Archivio_EdizioniPrecedenti.html">Edizioni precedenti</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="Galleria.html">Galleria</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="../../About Vincenzoni/About Vincenzoni.html">ABOUT VINCENZONI</a>
+          </li>
+          <li class="menu-item no-separator">
+            <a href="../../Contatti/Contatti.html">CONTATTI</a>
+          </li>
+        </ul>
+
+        <!-- Menu Toggler Button -->
+        <button class="menu-toggler" id="menu-toggler">
+          <i class="bx bx-menu"></i>
+        </button>
+      </navbar>
+    </header>
+
+<!-- Page title Section -->
+  <section class="page-title-section">
+        <div class="page-title-content">
+            <h1>Archivio</h1>
+        </div>
+  </section>
+
+<!-- Sezione mappa -->
+  <section class="gallery-section">
+    <div class="section-content">
+      <h3 class="section-title"><b>Galleria</b></h3>
+        
+       <div class="row"> 
+        <div class="column">
+          <img src="assets/images/01_Finestre-sul-Mondo_Progetto-Scuola-2023.jpg" alt="=01 Finestre sul Mondo" style="width:100%">
+          <img src="assets/images/01_Pane-e-Cinema_Progetto-Scuola-2023.jpg" alt="=01 Pane&Cinema" style="width:100%">
+          <img src="assets/images/02_Finestre-sul-Mondo_Progetto-Scuola-2023.jpg" alt="=02 Finestre sul Mondo" style="width:100%">
+          <img src="assets/images/02_Pane-e-Cinema_Progetto-Scuola-2023.jpg" alt="=02 Pane&Cinema" style="width:100%">  
+        </div>
+        <div class="column">
+          <img src="assets/images/03_Finestre-sul-Mondo_Progetto-Scuola-2023.jpg" alt="=03 Finestre sul Mondo" style="width:100%">
+          <img src="assets/images/03_Pane-e-Cinema_Progetto-Scuola-2023.jpg" alt="=03 Pane&Cinema" style="width:100%">
+          <img src="assets/images/04_Finestre-sul-Mondo_Progetto-Scuola-2023.jpg" alt="=04 Finestre sul Mondo" style="width:100%">
+          <img src="assets/images/09_Finestre-sul-Mondo_Progetto-Scuola-2023.jpg" alt="=09 Finestre sul Mondo" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/images/04_Pane-e-Cinema_Progetto-Scuola-2023.jpg" alt="=04 Pane&Cinema" style="width:100%">
+          <img src="assets/images/05_Finestre-sul-Mondo_Progetto-Scuola-2023.jpg" alt="=05 Finestre sul Mondo" style="width:100%">
+          <img src="assets/images/05_Pane-e-Cinema_Progetto-Scuola-2023.jpg" alt="=05 Pane&Cinema" style="width:100%">
+          <img src="assets/images/la-pelle-dell-orso_Marco-Segato.jpg" alt="=La pelle dell'orso - Marco Segato" style="width:100%">
+        </div>  
+       </div>        
+        
+    </div>      
+ </section>           
+      
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.column img');
+  images.forEach(function(image) {
+    image.addEventListener('click', function() {
+      // Create a modal element
+      var modal = document.createElement('div');
+      modal.classList.add('modal');
+
+      // Create an image element inside the modal
+      var modalImg = document.createElement('img');
+      modalImg.src = this.src;
+      modal.appendChild(modalImg);
+
+      // Append the modal to the document body
+      document.body.appendChild(modal);
+
+      // Close the modal when clicked outside the image
+      modal.addEventListener('click', function() {
+        modal.remove();
+      });
+    });
+  });
+});
+</script>      
+      
+      
+      
+      
+      
+<!-- Footer Section -->
+    <footer class="footer">
+      <div class="section-content">
+        <!-- Footer Contact Column -->
+        <div class="footer-column contact">
+          <h2 class="content-title">Associazione Luciano Vincenzoni</h2>
+          <a href="https://maps.app.goo.gl/RJURYRFAy22mawodA" target="_blank">
+            <i class="icon bx bxs-map"></i>
+            <span
+              >Piazzale Duca d'Aosta (c/o ass.ne Binario Uno) 31100
+              Treviso</span
+            >
+          </a>
+          <a href="mailto:concorso@premiovincenzoni.it">
+            <i class="bx bxs-envelope"></i>
+            <span>concorso@premiovincenzoni.it</span>
+          </a>
+          <a
+            href="https://www.facebook.com/AssociazioneLucianoVincenzoni/?locale=it_IT"
+            target="_blank"
+          >
+            <i class="bx bxl-facebook-square"></i>
+            <span>Segui la nostra pagina Facebook</span>
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <!-- Footer Links Column -->
+          <div class="inner-column links">
+            <h2 class="content-title">Menu</h2>
+            <ul class="footer-links">
+              <li class="link-item">
+                <a href="../../Home/index.html">Home</a>
+              </li>
+              <li class="link-item">
+                <a href="../../Associazione/Associazione.html">Associazione</a>
+              </li>
+              <li class="link-item">
+                <a href="../../Concorso 2024/Bando 2024/Concorso2024_Bando2024.html">Bando 2024</a>
+              </li>
+              <li class="link-item">
+                <a href="../../Cinema e scuola/Progetto scuola 2023/ProgettoScuola2023.html">Progetto scuola 2023</a>
+              </li>
+              <li class="link-item">
+                <a href="../../Cinema e scuola/Pane&Cinema/PaneECinema.html">Pane&amp;Cinema</a>
+              </li>
+              <li class="link-item">
+                <a href="../Edizioni precedenti/Archivio_EdizioniPrecedenti.html">Edizioni precedenti</a>
+              </li>
+              <li class="link-item">
+                <a href="Galleria.html">Galleria</a>
+              </li>              
+              <li class="link-item">
+                <a href="../../About Vincenzoni/About Vincenzoni.html">About Vincenzoni</a>
+              </li>
+              <li class="link-item">
+                <a href="../../Contatti/Contatti.html">Contatti</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Footer Sponsors Column -->
+          <div class="inner-column sponsors">
+            <h2 class="content-title">Patrocini sponsor partner</h2>
+            <div class="sponsor-list">
+              <img
+                src="assets/images/patrocinio-regione-veneto-logo.png"
+                alt="Patrocinio Regione Veneto"
+                class="sponsor-image"
+              />
+              <img
+                src="assets/images/citta-di-treviso-logo.png"
+                alt="Citta Di Treviso"
+                class="sponsor-image"
+              />
+              <img
+                src="assets/images/conservatorio-di-musica-agostino-steffani-logo.png"
+                alt="Conservatorio Di MMusica Agostino Steffani"
+                class="sponsor-image"
+              />
+              <img
+                src="assets/images/parajumpers-logo.png"
+                alt="Parajumpers"
+                class="sponsor-image"
+              />
+              <img
+                src="assets/images/castagner-logo.png"
+                alt="Castagner"
+                class="sponsor-image"
+              />
+              <img
+                src="assets/images/credit-agricole-logo.png"
+                alt="Credit Agricole"
+                class="sponsor-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

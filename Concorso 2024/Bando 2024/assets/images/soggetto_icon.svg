@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 10 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eeb2b2;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #a48f78;
+      }
+
+      .cls-3 {
+        fill: #fcd6ac;
+      }
+
+      .cls-4 {
+        fill: #fbd353;
+      }
+
+      .cls-5 {
+        fill: #cab191;
+      }
+
+      .cls-6 {
+        fill: #464f5d;
+      }
+
+      .cls-7 {
+        fill: #cbcbcb;
+      }
+
+      .cls-8 {
+        fill: #f4eec9;
+      }
+    </style>
+  </defs>
+  <g id="content">
+    <g id="Page-1">
+      <g id="_017---Copywriting-Script" data-name=" 017---Copywriting-Script">
+        <path id="Shape" class="cls-2" d="M9.8,8.4h-2.2v-4l1-1.2.5-.7.8-.9c0-.1.1-.2.1-.4s0-.3-.2-.3l-.5-.4c-.1,0-.2-.1-.4-.1-.1,0-.3,0-.3.2l-.8.9-.3.4c-.2-.4-.6-.7-1.1-.7H1.2C.5,1.2,0,1.7,0,2.4v.8c0,0,0,.2.2.2h2.2v5.1c0,.7.5,1.2,1.2,1.2h5.2c.6,0,1.1-.4,1.2-1,0,0,0-.1,0-.1s0,0-.1,0h0Z"/>
+        <path id="Shape-2" class="cls-4" d="M8.6,3.2l-1,1.2-1.7,2-1.3-1.1,2.6-3.2,1.3,1.1h0Z"/>
+        <path id="Shape-3" class="cls-7" d="M9.1,2.6l-.5.7-1.3-1.1.2-.2.3-.4s1.3,1.1,1.3,1.1Z"/>
+        <path id="Shape-4" class="cls-1" d="M9.9,1.6l-.8.9-1.3-1.1.8-.9c0-.1.2-.2.3-.2.1,0,.3,0,.4.1l.5.4c.1,0,.2.2.2.3s0,.3-.1.4h0Z"/>
+        <path id="Shape-5" class="cls-6" d="M5,7l-.7.4s-.1,0-.2,0c0,0,0-.1,0-.2l.3-.8.7.6h0Z"/>
+        <path id="Shape-6" class="cls-3" d="M5.9,6.4l-1,.5-.7-.6.4-1,1.3,1.1Z"/>
+        <path id="Shape-7" class="cls-8" d="M7.6,4.4v4h-2.6c0,0-.2,0-.2.1,0,.6-.6,1.1-1.3,1.1s-1.1-.6-1.1-1.2V2.4c0-.7-.5-1.2-1.2-1.2h5.2c.5,0,.9.3,1.1.7l-.2.2-2.6,3.2-.4,1-.3.8c0,0,0,.1,0,.2s.1,0,.2,0l.7-.4,1-.5,1.7-2h0Z"/>
+        <g>
+          <path id="Shape-8" class="cls-5" d="M6.4,2.2h-3.1c0,0-.2,0-.2-.2s0-.2.2-.2h3.1c0,0,.2,0,.2.2s0,.2-.2.2Z"/>
+          <path id="Shape-9" class="cls-5" d="M5.7,3.1h-2.4c0,0-.2,0-.2-.2s0-.2.2-.2h2.4c0,0,.2,0,.2.2s0,.2-.2.2Z"/>
+          <path id="Shape-10" class="cls-5" d="M5,4h-1.7c0,0-.2,0-.2-.2s0-.2.2-.2h1.7c0,0,.2,0,.2.2s0,.2-.2.2Z"/>
+          <path id="Shape-11" class="cls-5" d="M4.3,4.8h-1c0,0-.2,0-.2-.2s0-.2.2-.2h1c0,0,.2,0,.2.2s0,.2-.2.2Z"/>
+          <path id="Shape-12" class="cls-5" d="M6.7,7.8h-3.4c0,0-.2,0-.2-.2s0-.2.2-.2h3.4c0,0,.2,0,.2.2s0,.2-.2.2Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
