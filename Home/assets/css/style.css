@@ -1,0 +1,667 @@
+/* Importing Inter Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Resetting default styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --site-max-width: 1350px;
+
+    /* Colors */
+    --primary-color: #fbd353;
+    --text-color: #000;
+    --white-color: #fff;
+
+    /* Font & Typography */
+    --body-font: "Inter", sans-serif;
+    --font-size-xxl: 2.3rem;
+    --font-size-xl: 1.7rem;
+    --font-size-l: 1.3rem;
+    --font-size-n: 1rem;
+    --font-size-m: 0.9rem;
+
+    /* Font Weight */
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    --text-border-width: 10px;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+/* Remove scrollbar when mobile menu active */
+body.active-mobile-menu {
+    overflow-y: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Styles for the website button */
+button {
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: var(--font-size-n);
+    font-weight: var(--font-semibold);
+    background: var(--primary-color);
+    transition: 0.2s ease;
+}
+
+button:hover {
+    color: var(--white-color);
+    background: var(--text-color);
+}
+
+/* Styles for the site header */
+.site-header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    transition: 0.2s ease;
+}
+
+.site-header.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.site-header .navbar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 25px 8px 25px 20px;
+    max-width: var(--site-max-width);
+    /* Set maximum width */
+    justify-content: space-between;
+}
+
+.navbar .logo-link {
+    max-width: 170px;
+}
+
+.site-header .logo-link .logo-image.white,
+.site-header.scrolled .logo-link .logo-image.black {
+    display: none;
+}
+
+.site-header.scrolled .logo-link .logo-image.white {
+    display: block;
+}
+
+/* Styles for the navigation menu links */
+.navbar .menu-links {
+    display: flex;
+}
+
+.navbar .menu-links .menu-item {
+    position: relative;
+    /* Position for dropdown */
+    margin-right: 22px;
+}
+
+.navbar .menu-links .menu-item:last-child {
+    margin-right: 0;
+}
+
+/* Create pseudo-element for menu item separator */
+.navbar .menu-links .menu-item:not(.no-separator)::after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    width: 4px;
+    height: 50%;
+    background: var(--primary-color);
+    transform: translateY(-50%);
+}
+
+.navbar .menu-links .menu-item a {
+    float: left;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: var(--white-color);
+    font-size: var(--font-size-m);
+    padding: 9px 12px;
+}
+
+/* Hover styles for menu items */
+.navbar .menu-links .menu-item:hover {
+    background: var(--primary-color);
+}
+
+.navbar .menu-links .menu-item a:hover,
+.navbar .dropdown-links .dropdown-item a {
+    color: var(--text-color);
+}
+
+.navbar .menu-links .menu-item a .dropdown-icon {
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+/* Rotate Dropdown arrow on hover or on active-dropdown class */
+body:not(.active-mobile-menu) .navbar .menu-links .menu-item:hover a .dropdown-icon,
+.navbar .menu-links .menu-item.active-dropdown a .dropdown-icon {
+    transform: rotate(-180deg);
+}
+
+/* Dropdown styles */
+.navbar .dropdown-links {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    z-index: 5;
+    overflow-y: auto;
+    display: none;
+    overflow-x: hidden;
+    background: var(--primary-color);
+}
+
+/* Show dropdown on parent hover only if body 
+doesn't contain active-mobile-menu class */
+body:not(.active-mobile-menu) .navbar .menu-item:hover .dropdown-links {
+    display: block;
+}
+
+.navbar .dropdown-links .dropdown-item a:hover {
+    color: var(--white-color);
+}
+
+/* Styles for Menu Toggler Button */
+.navbar .menu-toggler {
+    background: none;
+    padding: 0;
+    display: none;
+    color: var(--text-color);
+    font-size: var(--font-size-xl);
+}
+
+.site-header.scrolled .navbar .menu-toggler {
+    color: var(--white-color);
+}
+
+
+
+/* -----------------------------------------------------------------------------------*/
+
+
+
+/* Styles for the hero section */
+.hero-section {
+    min-height: 100vh;
+    background: url("../images/Signore_&_signori.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section .hero-image {
+    display: none;
+    object-fit: cover;
+    height: 300px;
+}
+
+/* Styles for the content within sections */
+.section-content {
+    margin: 0 auto;
+    /* Center content horizontally */
+    padding: 0 20px;
+    max-width: var(--site-max-width);
+    /* Set maximum width */
+}
+
+/* Styles for content within hero section */
+.hero-section .section-content {
+    display: flex;
+    padding-bottom: 50px;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+
+/* Styles for section and card title within section */
+.hero-section .content-wrapper .section-title,
+.event-section .section-content .card-title {
+    line-height: 1.2;
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+    font-size: var(--font-size-xxl);
+}
+
+/* Styles for bold text within section title */
+.hero-section .content-wrapper .section-title b,
+.event-section .section-content .card-title b {
+    padding-bottom: 5px;
+    font-weight: var(--font-semibold);
+    border-bottom: var(--text-border-width) solid var(--primary-color);
+}
+
+.hero-section .content-wrapper .hero-button {
+    margin-top: 40px;
+}
+
+.hero-section .content-wrapper .hero-button:hover {
+    background: var(--white-color) !important;
+    color: var(--text-color);
+}
+
+/* Styles for card items within the event section */
+.event-section .card-list .card-item {
+    display: flex;
+    gap: 100px;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.event-section .section-content .card-title.mobile-title {
+    display: none;
+}
+
+/* Styles for columns within card items */
+.event-section .card-list .card-item .card-column {
+    width: calc(100% / 2);
+}
+
+/* Reverse flex direction for even card items */
+.event-section .card-list .card-item:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+
+.event-section .card-list .card-item .card-title {
+    color: var(--text-color);
+    /* Set text color */
+}
+
+.event-section .card-list .card-item .card-details {
+    margin-top: 50px;
+}
+
+/* Styles for card subtitle */
+.event-section .card-item .card-details .card-subtitle {
+    font-size: var(--font-size-m);
+    position: relative;
+    display: inline-flex;
+    padding-right: 15px;
+    z-index: 1;
+}
+
+/* Styles for pseudo-element before card subtitle */
+.event-section .card-item .card-details .card-subtitle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 7px;
+    width: 100%;
+    background: var(--primary-color);
+}
+
+/* Styles for card text */
+.event-section .card-item .card-details .card-text {
+    margin: 15px 0;
+    font-weight: var(--font-medium);
+}
+
+.event-section .card-item .card-details .card-text b {
+    color: var(--primary-color);
+    font-weight: var(--font-semibold);
+}
+
+.event-section .card-item .card-details .card-button {
+    margin-top: 20px;
+}
+
+.event-section .card-item .card-details .card-button:hover {
+    color: var(--white-color);
+    background: var(--text-color);
+}
+
+/* Styles for lists within card details */
+.event-section .card-item .card-details .list {
+    padding-left: 30px;
+}
+
+.event-section .card-item .card-details .list li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Styles for pseudo-element before first list item */
+.event-section .card-item .card-details .list li:first-child::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    width: 15px;
+    height: 6px;
+    background: var(--primary-color);
+}
+
+
+
+/* -----------------------------------------------------------------------------------*/
+
+
+
+/* FOOTER style */
+.footer {
+    padding: 50px 0;
+    background: var(--primary-color);
+}
+
+.footer .section-content {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.footer .footer-column {
+    flex: 1;
+}
+
+/* Styles for content titles within footer */
+.footer .section-content .content-title {
+    margin-bottom: 20px;
+    font-weight: var(--font-bold);
+    font-size: var(--font-size-n);
+}
+
+/* Styles for contact links within footer */
+.footer .footer-column.contact a {
+    display: flex;
+    margin-top: 20px;
+    word-break: break-all;
+    color: var(--text-color);
+    transition: 0.2s ease;
+}
+
+.footer .footer-column.contact a:hover,
+.footer .footer-column .links a:hover {
+    color: var(--white-color);
+}
+
+.footer .footer-column.contact a i {
+    margin-right: 10px;
+    font-size: var(--font-size-l);
+}
+
+.footer .footer-column:nth-child(2) {
+    flex: 2;
+    display: flex;
+}
+
+.footer .footer-column .inner-column {
+    flex: 1;
+}
+
+.footer .inner-column.links a {
+    margin-bottom: 10px;
+    display: block;
+    color: var(--text-color);
+    transition: 0.2s ease;
+}
+
+/* Styles for sponsor list within sponsors column */
+.footer .inner-column.sponsors .sponsor-list {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    /* Set grid columns */
+}
+
+.footer .inner-column.sponsors .sponsor-image {
+    max-width: 130px;
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+
+
+/* -----------------------------------------------------------------------------------*/
+
+
+
+/* Media query for screens up to 1200px width */
+@media screen and (max-width: 1200px) {
+    :root {
+        /* Adjustments to font size */
+        --font-size-xxl: 2rem;
+    }
+
+    /* Adjustments to header navbar */
+    .site-header .navbar {
+        padding: 20px 8px 20px 20px;
+    }
+
+    .navbar .logo-link {
+        max-width: 120px;
+    }
+
+    .navbar .menu-links .menu-item {
+        margin-right: 0px;
+    }
+
+    .navbar .menu-links .menu-item:not(:last-child)::after {
+        display: none;
+        /* Hide separator */
+    }
+
+    /* Adjustments to event card items */
+    .event-section .card-list .card-item {
+        gap: 50px;
+        margin: 60px 0;
+        align-items: flex-start;
+    }
+
+    .event-section .card-list .card-item {
+        gap: 50px;
+        align-items: flex-start;
+    }
+}
+
+/* Media query for screens up to 1000px width */
+@media screen and (max-width: 1050px) {
+
+    /* Adjustments to header navbar and section content */
+    .site-header .navbar {
+        padding: 20px 20px;
+    }
+
+    .section-content {
+        padding: 0 20px;
+    }
+
+    .navbar .menu-toggler {
+        display: block;
+    }
+
+    /* Styles for mobile menu */
+    .navbar .menu-links {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 60px 40px;
+        flex-direction: column;
+        background: var(--primary-color);
+        transition: top 0.3s ease;
+    }
+
+    .active-mobile-menu .navbar .menu-toggler {
+        color: var(--text-color) !important;
+        z-index: 99;
+    }
+
+    .active-mobile-menu .navbar .close-menu-button {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .active-mobile-menu .navbar .menu-links {
+        top: 0;
+    }
+
+    .navbar .menu-links .menu-item {
+        margin-bottom: 8px;
+    }
+
+    .navbar .menu-links .menu-item a {
+        font-size: var(--font-size-n);
+        font-weight: var(--font-semibold);
+        color: var(--text-color);
+    }
+
+    .navbar .menu-links .menu-item a:hover {
+        color: var(--white-color);
+    }
+
+    .navbar .dropdown-links {
+        top: 0;
+        display: none;
+        margin-left: 15px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .navbar .menu-item.active-dropdown .dropdown-links {
+        display: flex;
+    }
+
+    .navbar .dropdown-links .dropdown-item a {
+        font-weight: var(--font-medium);
+    }
+
+    /* Adjustments to event card items */
+    .event-section .card-list .card-item {
+        width: 100%;
+        flex-direction: column !important;
+    }
+
+    .event-section .card-list .card-item .card-column {
+        width: 100%;
+    }
+
+    /* Adjustments to footer section content */
+    .footer .section-content {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .footer .footer-column.sponsors .sponsor-list {
+        gap: 10px;
+    }
+}
+
+/* Media query for screens up to 550px width */
+@media screen and (max-width: 550px) {
+    :root {
+        /* Adjustments variables value */
+        --font-size-xxl: 1.5rem;
+        --text-border-width: 7px;
+    }
+
+    .site-header .navbar {
+        padding: 20px 27px;
+    }
+
+    .section-content {
+        padding: 0 27px;
+    }
+
+    .site-header .logo-link .logo-image.black,
+    .site-header.scrolled .logo-link .logo-image.white {
+        display: none;
+    }
+
+    .site-header .logo-link .logo-image.white,
+    .site-header.scrolled .logo-link .logo-image.white {
+        display: block;
+    }
+
+    .navbar .menu-toggler {
+        color: var(--white-color);
+    }
+
+    .hero-section {
+        background: none;
+    }
+
+    .hero-section .hero-image {
+        display: block;
+    }
+
+    .hero-section,
+    .hero-section .section-content {
+        min-height: 100%;
+        padding-bottom: 0;
+        position: relative;
+    }
+
+    .hero-section .section-content {
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .hero-section .content-wrapper .hero-button {
+        font-size: var(--font-size-m);
+        padding: 10px 16px;
+    }
+
+    .event-section .card-list .card-item {
+        gap: 30px;
+    }
+
+    .event-section .section-content .card-title.mobile-title {
+        display: flex !important;
+        gap: 5px;
+        margin-bottom: 20px;
+        font-size: calc(var(--font-size-n) + 0.05rem);
+    }
+
+    .event-section .section-content .card-item .card-title {
+        display: none;
+    }
+
+    .event-section .card-list .card-item .card-details {
+        margin-top: 0;
+    }
+
+    .footer .footer-column:nth-child(2) {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .footer .inner-column .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(90px, 1fr));
+    }
+
+    .footer .footer-column.sponsors .sponsor-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
